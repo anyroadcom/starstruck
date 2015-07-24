@@ -12,7 +12,8 @@ class DevelopersController < ApiController::Base
   end
 
   def stars
-    @developer = Developer.where(slug: params[:slug]).first!
+    slug = params[:slug]
+    @developer = Developer.where(slug: slug).first!
     @developer.add_star!
     render json: @developer, status: :ok
   end
