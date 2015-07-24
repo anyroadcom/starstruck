@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: starstruck_development
+  host: localhost
+  username: starstruck
+  password: 123456
